@@ -6,7 +6,7 @@ var prefix = "*";
 
 client.on('ready', () => {
     console.log('logged in as ' + client.user.tag)
-    client.user.setActivity('la sécurité de ton serveur',{type: 'STREAMING'})
+    client.user.setActivity('la sécurité de ton serveur',{type: 'WATCHING'})
 });
 
 client.login(process.env.TOKEN)
@@ -127,3 +127,18 @@ client.on('message' , message => {
     }
 });
 
+client.on("message" , message => {
+    if(message.content === "He"){
+        var bella_embed = new Discord.RichEmbed()
+        .setColor('01fa41')
+        .setTitle('```MA BELLA EH```')
+        .setThumbnail('https://discordapp.com/channels/568369085595779074/569125583787786241/569605069767573600://discordapp.com/channels/568369085595779074/569125583787786241/569599932210872320')
+        .setDescription('Aya ya yaa')
+        .setTimestamp()
+        .setFooter('Edité par oOTeamCocOo')
+        message.channel.sendMessage(bella_embed)
+        message.author.sendMessage('```N hesite pas à m ajouter a ton serveur ! :``` https://discordapp.com/api/oauth2/authorize?client_id=569192657536942162&permissions=0&scope=bot ')
+        console.log("Un utilisateur à dit he")
+        
+    }
+});
