@@ -142,9 +142,8 @@ client.on("message" , message => {
         
     }
 });
-
 client.on("message" , message => {
-    if(message  ;   content === prefix + 'star1502?'){
+    if(message.content === prefix + 'star1502?') {
     var star1502_embed = new Discord.RichEmbed()
         .setColor('0485fa')
         .setTitle('               Qui est star1502 ?')
@@ -156,4 +155,4 @@ client.on("message" , message => {
          message.author.sendMessage('```N hesite pas à m ajouter a ton serveur ! :``` https://discordapp.com/api/oauth2/authorize?client_id=569192657536942162&permissions=0&scope=bot ')
          console.log('L histoire de star1502 à été evoquer')
     }
-                                     });
+});
