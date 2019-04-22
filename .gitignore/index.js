@@ -167,7 +167,7 @@ client.on("message", message => {
         let count = args[1]
         if (!count) return message.channel.send(" Tu as cru que j'allais deviner combien de message tu veux supprimer ? Indique un nombre patate.")
         if (isNaN(count)) return message.channel.send("Tu vas, m'écrire un VRAI nombre ? ")
-        if (count < 1 || count > 100) return message.channel.send("Veuillez indiquer un nombre entre 1 et 100")
+        if (count < 1 || count > 5000) return message.channel.send("Veuillez indiquer un nombre entre 1 et 5000")
         message.channel.bulkDelete(parseInt(count) + 1)
     }
 });
