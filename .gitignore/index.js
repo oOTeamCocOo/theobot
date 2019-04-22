@@ -119,7 +119,7 @@ client.on('message' , message => {
         var reglement_embed = new Discord.RichEmbed()
         .setColor('f3f800')
         .setTitle('```REGLEMENT```')
-        .setDescription('MON PREFIX EST "*"\n\n1) Pas de everyone sur notre serveur.\n\n 2) Les insultes sont interdites et seront sanctionnés.\n\n 3) Pas de pubs pour vos serveurs discord.\n\n 4) Ajouter le not avec la commande *invite.\n\n 5) Les liens inappropriés comme des screamers et des sites pornographiques sont automatiquement supprimés.\n\n 6) Ne pas spammer/flood, utiliser trop de caractères spéciaux ou encore écrire de longs messages en MAJUSCULES.\n\n 7) Respectez tous les membres de façon égale et soyez gentils les uns envers les autres. Si vous avez des problèmes avec quelqu un ou que vous vous sentez harcelé, contactez un membre du staff.\n\n\n-------------------------------------------')
+        .setDescription('MON PREFIX EST "*" \n\n1) Pas de everyone sur notre serveur.\n\n 2) Les insultes sont interdites et seront sanctionnés.\n\n 3) Pas de pubs pour vos serveurs discord.\n\n 4) Ajouter le not avec la commande *invite.\n\n 5) Les liens inappropriés comme des screamers et des sites pornographiques sont automatiquement supprimés.\n\n 6) Ne pas spammer/flood, utiliser trop de caractères spéciaux ou encore écrire de longs messages en MAJUSCULES.\n\n 7) Respectez tous les membres de façon égale et soyez gentils les uns envers les autres. Si vous avez des problèmes avec quelqu un ou que vous vous sentez harcelé, contactez un membre du staff.\n\n\n-------------------------------------------')
         .setFooter('réglement 2019')
         .setTimestamp()
         message.channel.sendMessage(reglement_embed)
@@ -142,3 +142,18 @@ client.on("message" , message => {
         
     }
 });
+
+client.on("message" , message => {
+    if(message  ;   content === prefix + 'star1502?'){
+    var star1502?_embed = new Discord.RichEmbed()
+        .setColor('0485fa')
+        .setTitle('               Qui est star1502 ?')
+        .setThumbail('https://discordapp.com/channels/@me/346422121712582656/396808769105035264')
+        .setTimestemp()
+        .setFooter('dédicace à star1502')
+        .setDescription('Bonjour à toi,\n\n Je vais te raconter l histoire de la chaîne star1502 !\n\n Pour commencer, star 1502, inscrit le 27 déc. 2015 sur youtube, à publier sa première vidéo le lendemain de son inscription.\n\n Il continue alors à publier des petites vidéo régulièrement, il atteint les 500abonnés le 27 oct. 2016 !\n Le temps passe...\n\n star1502 met en place son live "Fais ta pub", il y trouve très rapidement succé !\n tous ce passé bien jusqu a ce que YouTube interdise le fais ta pub (début 2018) \n\n Il avait aussi un serveur DISCORD depuis le début, mais à cause de cet événement, il finis vite par s éteindre ! Plus personne n était actif...\n\n Trouveras-t-il un option de secours ?\n\n Mis à jour le 22/04/2019 à 10h40.')
+         message.channel.sendMessage(star1502?_embed)
+         message.author.sendMessage('```N hesite pas à m ajouter a ton serveur ! :``` https://discordapp.com/api/oauth2/authorize?client_id=569192657536942162&permissions=0&scope=bot ')
+         console.log('L histoire de star1502 à été evoquer')
+    }
+                                     });
