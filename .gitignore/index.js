@@ -203,22 +203,24 @@ client.on('message',message =>{
 });
 //join
 client.on('guildMemberAdd', member =>{
+    let join_embed = new Discord.RichEmbed()
+        .setTitle('BIENVENU')
+        .setDescription(':tada: **' + member.user.username + '** a rejoint ' + member.guild.name)
+        .setFooter('Nous sommes désormais ' + member.guild.memberCount)
+    member.guild.channels.get('569122701692633108').send(join_embed)
+    member.addRole('569114748747120650')
     let embed = new Discord.RichEmbed()
         .setDescription(':tada: **' + member.user.username + '** a rejoint ' + member.guild.name)
         .setFooter('Nous sommes désormais ' + member.guild.memberCount)
-    member.guild.channels.get('569122701692633108').send(embed)
-    member.addRole('client.on('guildMemberAdd', member =>{
-    let embed = new Discord.RichEmbed()
-        .setDescription(':tada: **' + member.user.username + '** a rejoint ' + member.guild.name)
-        .setFooter('Nous sommes désormais ' + member.guild.memberCount)
-    member.guild.channels.get('569114748747120650')
- 
-});
+        member.guild.channels.get('569114748747120650')
+        }
+ );
  //left
 client.on('guildMemberRemove', member =>{
-    let embed = new Discord.RichEmbed()
+    let leave_embed = new Discord.RichEmbed()
+        .setTitle('AUREVOIR')
         .setDescription(':cry: **' + member.user.username + '** a quitté ' + member.guild.name)
         .setFooter('Nous sommes désormais ' + member.guild.memberCount)
-    member.guild.channels.get('569122701692633108').send(embed)
+    member.guild.channels.get('569122701692633108').send(leave_embed)
  
 });
