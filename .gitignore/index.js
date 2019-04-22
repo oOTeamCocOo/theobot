@@ -142,8 +142,9 @@ client.on("message" , message => {
         
     }
 });
+
 client.on("message" , message => {
-    if(message.content === prefix + 'star1502?') {
+    if(message.content === '*star1502') {
     var star1502_embed = new Discord.RichEmbed()
         .setColor('0485fa')
         .setTitle('               Qui est star1502 ?')
