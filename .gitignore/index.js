@@ -207,6 +207,7 @@ client.on('guildMemberAdd', member =>{
         .setTitle('BIENVENU')
         .setDescription(':tada: **' + member.user.username + '** a rejoint ' + member.guild.name)
         .setFooter('Nous sommes désormais ' + member.guild.memberCount)
+        .icon_url: client.user.avatarURL
     member.guild.channels.get('569122701692633108').send(join_embed)
     member.addRole('569114748747120650')
     let embed = new Discord.RichEmbed()
@@ -221,6 +222,7 @@ client.on('guildMemberRemove', member =>{
         .setTitle('AUREVOIR')
         .setDescription(':cry: **' + member.user.username + '** a quitté ' + member.guild.name)
         .setFooter('Nous sommes désormais ' + member.guild.memberCount)
+        .icon_url: client.user.avatarURL
     member.guild.channels.get('569122701692633108').send(leave_embed)
  
 });
