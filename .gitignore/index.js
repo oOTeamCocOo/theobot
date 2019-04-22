@@ -16,7 +16,7 @@ client.on("message" , message => {
         var info_embed = new Discord.RichEmbed()
         .setColor('e70647')
         .setTitle('```Voici la liste de commande```\n\n-------------------------------------------')
-        .setDescription('*help: liste de commande\n\n*aie: appeler un responsable\n\n*blacklist: avoir la liste noire\n\n*securise: activer mode sécurité\n\n*invite: avoire lien invitation bot\n\n*info: info du jour\n\n\n-------------------------------------------')
+        .setDescription('*help: liste de commande\n\n*aie: appeler un responsable\n\n*blacklist: avoir la liste noire\n\n*securise: activer mode sécurité\n\n*invite: avoire lien invitation bot\n\n*info: info du jour\n\n*clear [NOMBRE] effacer un lot de message\n\n\n-------------------------------------------\n [OPTIONNEL]\n\n *star1502: Savoir l histoire de ce YouTubeur\n\n\n-------------------------------------------')
         .setTimestamp()
         .setFooter('Edité par oOTeamCocOo')
         message.channel.sendMessage(info_embed)
@@ -157,3 +157,17 @@ client.on("message" , message => {
          console.log('L histoire de star1502 à été evoquer')
         }
     });
+
+client.on("message", message => {
+    if (!message.guild) return
+    let args = message.content.trim().split(/ +/g)
+ 
+    if (args[0].toLowerCase() === prefix + "clear") {
+        if (!message.member.hasPermission('MANAGE_MESSAGES')) return message.channel.send("Bah nan... C'est pas encore aujourd'hui que tu vas utilisé cette commande !!")
+        let count = args[1]
+        if (!count) return message.channel.send(" Tu as cru que j'allais deviner combien de message tu veux supprimer ? Indique un nombre patate.")
+        if (isNaN(count)) return message.channel.send("Tu vas, m'écrire un VRAI nombre ? ")
+        if (count < 1 || count > 100) return message.channel.send("Veuillez indiquer un nombre entre 1 et 100")
+        message.channel.bulkDelete(parseInt(count) + 1)
+    }
+});
