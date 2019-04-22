@@ -38,7 +38,7 @@ client.on("message" , message => {
 
 client.on("message" , message => {
     if(message.content === "*blacklist"){
-        message.reply(" ```Voici les gens possédant des idées noire:``` @.......#0000 ; @.......#0000 ....");
+        message.reply(" ```Voici les gens possédant des idées noire:``` @Chrisopeer Davies et @Jessica Davies");
         console.log("Blacklist demandé")
     }
 });
