@@ -16,7 +16,7 @@ client.on("message" , message => {
         var info_embed = new Discord.RichEmbed()
         .setColor('e70647')
         .setTitle('```Voici la liste de commande```\n\n-------------------------------------------')
-        .setDescription('*help: liste de commande\n\n*aie: appeler un responsable\n\n*blacklist: avoir la liste noire\n\n*invite: avoire lien invitation bot\n\n*info: info du jour\n\n\n-------------------------------------------\n\n [ADMINISTRATION]\n\n*securise: activer mode sécurité\n\n*clear [NOMBRE] effacer un lot de message\n\n\n-------------------------------------------\n\n [OPTIONNEL]\n\n *star1502: Savoir l histoire de ce YouTubeur\n\n\n-------------------------------------------')
+        .setDescription('*help: liste de commande\n\n*blacklist: avoir la liste noire\n\n*invite: avoire lien invitation bot\n\n*info: info du jour\n\n\n-------------------------------------------\n\n [ADMINISTRATION]\n\n*securise: activer mode sécurité\n\n*clear [NOMBRE] effacer un lot de message\n\n\n-------------------------------------------\n\n [OPTIONNEL]\n\n *star1502: Savoir l histoire de ce YouTubeur\n\n\n-------------------------------------------')
         .setTimestamp()
         .setFooter('Edité par oOTeamCocOo')
         message.channel.sendMessage(info_embed)
