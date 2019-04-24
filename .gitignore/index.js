@@ -28,7 +28,7 @@ client.on("message" , message => {
 
 client.on("message" , message => {
     if(message.content === "*aie"){
-        message.reply("```{@305773294630600706}    un probléme est détécté```");
+         member.channel.sendMessage('569122701692633108').send    un probléme est détécté```");
         message.author.sendMessage('```N hesite pas à m ajouter a ton serveur ! :``` https://discordapp.com/api/oauth2/authorize?client_id=569192657536942162&permissions=0&scope=bot ')
         console.log("Un probléme a mener a la mention des patrons")
     }
