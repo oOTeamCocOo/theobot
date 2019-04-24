@@ -1,6 +1,6 @@
 {
   "name": "discorddefender",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "bot defender security anti spam, raid, ddos",
   "main": "index.js",
   "scripts": {
