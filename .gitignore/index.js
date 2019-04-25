@@ -215,6 +215,17 @@ client.on('guildMemberRemove', member =>{
  
 });
 
+client.on('message', msg => {
+  var memberCount = client.users.size;
+  var servercount = client.guilds.size;
+  if(msg.content === prefix + "info")
+  var info_embed = new Discord.RichEmbed()
+      .setTitle("information sur le bot")
+          .addField("Vous , êtes " + memberCount + "joueurs à m'utiliser","Merci à vous tou !", false)
+      .addField("Je suis actuellement sur "+ servercount + "serveur ")
+    msg.channel.send(info_embed)
+});
+
 
 
       
