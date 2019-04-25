@@ -221,7 +221,7 @@ client.on('message', msg => {
   if(msg.content === prefix + "info")
   var info_embed = new Discord.RichEmbed()
       .setTitle("information sur le bot")
-          .addField("Vous , êtes " + memberCount + "joueurs à m'utiliser","Merci à vous tou !", false)
+          .addField("Vous , êtes " + memberCount + "users à m'utiliser","Merci à vous tous !", false)
       .addField("Je suis actuellement sur "+ servercount + "serveur ")
     msg.channel.send(info_embed)
 });
