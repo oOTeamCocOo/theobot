@@ -219,15 +219,32 @@ client.on('message', msg => {
   var memberCount = client.users.size;
   var servercount = client.guilds.size;
   if(msg.content === prefix + "info")
-  name: client.user.username
-  icon_url: client.user.avatarURL
-  var embed = new Discord.RichEmbed()
-      .setTitle("information sur le bot"
-      .setColor('0b80e7')
-      .addField("Nous somme " + memberCount + " user à m'utiliser"," merci à vous tous .", false)
-      .addField("je suis sur "+ servercount + " serveur "," merci a vous tous", false)
-    msg.channel.send(embed)
-});
+      msg.channel.send({embed: {
+        color: 3447003,
+        author: {
+          name: client.user.username,
+          icon_url: client.user.avatarURL
+        },
+        title: 'help pour le bot',
+        description: 'commands du bot',
+        fields: [
+          {
+            name: "}clear 1 > 99",
+            value: "clear le channel demander"
+          },
+          {
+              name: "}discord",
+              value: "donne le lien pour rejoindre le discord du bot"
+          }
+        ],
+        timestamp: new Date(),
+        footer:{
+          text: ''
+        }
+      }})
+    }
+  })
+
 
 
 
