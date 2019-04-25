@@ -218,19 +218,17 @@ client.on('guildMemberRemove', member =>{
 client.on('message', msg => {
   var memberCount = client.users.size;
   var servercount = client.guilds.size;
-  if(msg.content === prefix + "info")
-      msg.channel.send({embed: {
-        color: 3447003,
+  var info_embed = new Discord.RichEmbed()
+  if(msg.content === prefix + "info"
+        setColor("3447003")
         author: {
-          name: client.user.username,
-          icon_url: client.user.avatarURL
-        },
-        var embed = new Discord.RichEmbed()
+          name: client.user.username
+          icon_url: client.user.avatarUR
       .setTitle("information sur le bot")
       .addField("nous somme " + memberCount + " player a m'utiliser"," mrc a vous tous", false)
       .addField("je suis sur "+ servercount + " serveur "," mrc a vous tous", false)
       .setFooter("Par oOTeamCocOo")
-    msg.channel.send(embed)
+    msg.channel.send(info_embed)
 })
 
 
