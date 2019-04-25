@@ -225,26 +225,13 @@ client.on('message', msg => {
           name: client.user.username,
           icon_url: client.user.avatarURL
         },
-        title: 'help pour le bot',
-        description: 'commands du bot',
-        fields: [
-          {
-            name: "}clear 1 > 99",
-            value: "clear le channel demander"
-          },
-          {
-              name: "}discord",
-              value: "donne le lien pour rejoindre le discord du bot"
-          }
-        ],
-        timestamp: new Date(),
-        footer:{
-          text: ''
-        }
-      }})
-    }
-  })
-
+        var embed = new Discord.RichEmbed()
+      .setTitle("information sur le bot")
+      .addField("nous somme " + memberCount + " player a m'utiliser"," mrc a vous tous", false)
+      .addField("je suis sur "+ servercount + " serveur "," mrc a vous tous", false)
+      .setFooter("Par oOTeamCocOo")
+    msg.channel.send(embed)
+})
 
 
 
