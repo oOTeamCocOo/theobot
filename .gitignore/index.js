@@ -211,7 +211,7 @@ client.on('message', msg => {
       .setFooter('Crée par oOTeamCocOo')
       .setTimestamp()
       .addField("Vous êtes " + memberCount + " users à m'utiliser"," Merci à vous tous", false)
-      .addField("je suis sur "+ servercount + " serveur "," Merci à vous tous", false)
+      .addField("Je suis sur "+ servercount + " serveurs "," Merci à vous tous", false)
     msg.channel.send(infos_embed)
 });
 
