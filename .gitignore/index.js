@@ -88,21 +88,7 @@ client.on("message" , message => {
 });
 
 
-client.on("message" , message => {
-    if(message.content === prefix + "info") {
-        var info_embed = new Discord.RichEmbed()
-        .setColor('0587ff')
-        .setTitle('```INFO DU JOUR```')
-        .setThumbnail('https://discordapp.com/channels/568369085595779074/569125583787786241/569599932210872320')
-        .setDescription('Bonjour, aujourd hui, les principales informations de discord sont : compte spotify premium pour seulement 1€50 dans la boutique à coco')
-        .setTimestamp()
-        .setFooter('Edité par oOTeamCocOo')
-        message.channel.sendMessage(info_embed)
-        message.author.sendMessage('```N hesite pas à m ajouter a ton serveur ! :``` https://discordapp.com/api/oauth2/authorize?client_id=569192657536942162&permissions=0&scope=bot ')
-        console.log("Un utilisateur à demander l'info")
-        message.delete()
-    }
-});
+
 
 client.on('message' , message => {
     if(message.content === prefix +'reglement') {
