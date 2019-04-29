@@ -208,6 +208,7 @@ client.on('message', msg => {
   var infos_embed = new Discord.RichEmbed()
       .setTitle("INFO DU Coco BOT")
       .setColor('ff9300')
+      .setFooter('Crée par oOTeamCocOo')
       .addField("Vous êtes " + memberCount + " users à m'utiliser"," Merci à vous tous", false)
       .addField("je suis sur "+ servercount + " serveur "," Merci à vous tous", false)
     msg.channel.send(infos_embed)
