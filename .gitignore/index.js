@@ -215,6 +215,16 @@ client.on('guildMemberRemove', member =>{
  
 });
 
+client.on('message', msg => {
+  var memberCount = client.users.size;
+  var servercount = client.guilds.size;
+  if(msg.content === prefix + "info")
+  var infos_embed = new Discord.RichEmbed()
+      .setTitle("INFO DU Coco BOT")
+      .addField("Vous êtes " + memberCount + " users à m'utiliser"," Merci à vous tous", false)
+      .addField("je suis sur "+ servercount + " serveur "," Merci à vous tous", false)
+    msg.channel.send(infos_embed)
+});
 
 
 
