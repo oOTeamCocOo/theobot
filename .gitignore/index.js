@@ -207,6 +207,7 @@ client.on('message', msg => {
   if(msg.content === prefix + "info")
   var infos_embed = new Discord.RichEmbed()
       .setTitle("INFO DU Coco BOT")
+      .setColor('ff9300')
       .addField("Vous êtes " + memberCount + " users à m'utiliser"," Merci à vous tous", false)
       .addField("je suis sur "+ servercount + " serveur "," Merci à vous tous", false)
     msg.channel.send(infos_embed)
