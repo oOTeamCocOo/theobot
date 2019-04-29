@@ -209,6 +209,7 @@ client.on('message', msg => {
       .setTitle("INFO DU Coco BOT")
       .setColor('ff9300')
       .setFooter('Crée par oOTeamCocOo')
+      .setTimestamp()
       .addField("Vous êtes " + memberCount + " users à m'utiliser"," Merci à vous tous", false)
       .addField("je suis sur "+ servercount + " serveur "," Merci à vous tous", false)
     msg.channel.send(infos_embed)
