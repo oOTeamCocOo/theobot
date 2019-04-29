@@ -49,14 +49,14 @@ client.on("message" , message => {
 
 client.on("message" , message => {
     if(message.content === "Tg"){
-        message.reply("```[WARNING] On ne parle pas comme sa à ces camarades DISCORD !```");
+        message.reply("```[WARNING] On ne parle pas comme ça à ses camarades DISCORD !```");
         console.log("Un utilisateur à dis TAGEULE, je n'aime pas ça")
     }
 });
 
 client.on("message" , message => {
     if(message.content === "Slt"){
-        message.reply("```Bonjour, mes créateurs sont oOTeamCocOo et Advisor Discord Defender, je suis déstiné à apporter la protection de tous !```");
+        message.reply("```Bonjour, mon créateur, c'est oOTeamCocOo, je suis déstiné à apporter la protection de tous !```");
         message.author.sendMessage('```N hesite pas à m ajouter a ton serveur ! :``` https://discordapp.com/api/oauth2/authorize?client_id=569192657536942162&permissions=0&scope=bot ')
         console.log("un utilisateur à dis salut")
     }
@@ -64,7 +64,7 @@ client.on("message" , message => {
 
 client.on("message" , message => {
     if(message.content === "Hey"){
-        message.reply("```Bonjour, mes créateurs sont oOTeamCocOo et Advisor Discord Defender, je suis déstiné à apporter la protection de tous !```");
+        message.reply("```Bonjour, mon créateur, c'est oOTeamCocOo, je suis déstiné à apporter la protection de tous !```");
         message.author.sendMessage('```N hesite pas à m ajouter a ton serveur ! :``` https://discordapp.com/api/oauth2/authorize?client_id=569192657536942162&permissions=0&scope=bot ')
         console.log("Un utilisateur à dis Hey")
         
